@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "JSTool.h"
+
 @interface ViewController ()
 
 @end
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
+    [JSTool gg];
 }
 
 @end

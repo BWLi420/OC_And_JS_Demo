@@ -14,6 +14,9 @@
 		2346A34E212438490004085E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2346A34C212438490004085E /* LaunchScreen.storyboard */; };
 		2346A351212438490004085E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346A350212438490004085E /* main.m */; };
 		2346A359212438770004085E /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2346A358212438770004085E /* JavaScriptCore.framework */; };
+		2346A35D212439620004085E /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = 2346A35B212439620004085E /* test.js */; };
+		2346A36021243A720004085E /* JSTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346A35F21243A720004085E /* JSTool.m */; };
+		2346A36321243AC30004085E /* JSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2346A36221243AC30004085E /* JSObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,11 @@
 		2346A34F212438490004085E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2346A350212438490004085E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2346A358212438770004085E /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2346A35B212439620004085E /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
+		2346A35E21243A720004085E /* JSTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSTool.h; sourceTree = "<group>"; };
+		2346A35F21243A720004085E /* JSTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTool.m; sourceTree = "<group>"; };
+		2346A36121243AC30004085E /* JSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSObject.h; sourceTree = "<group>"; };
+		2346A36221243AC30004085E /* JSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,10 +70,14 @@
 		2346A340212438470004085E /* OCAndJSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2346A35A212439620004085E /* JSFile */,
+				2346A35C212439620004085E /* JSObject */,
 				2346A341212438470004085E /* AppDelegate.h */,
 				2346A342212438470004085E /* AppDelegate.m */,
 				2346A344212438470004085E /* ViewController.h */,
 				2346A345212438470004085E /* ViewController.m */,
+				2346A35E21243A720004085E /* JSTool.h */,
+				2346A35F21243A720004085E /* JSTool.m */,
 				2346A347212438470004085E /* Main.storyboard */,
 				2346A34A212438490004085E /* Assets.xcassets */,
 				2346A34C212438490004085E /* LaunchScreen.storyboard */,
@@ -81,6 +93,23 @@
 				2346A358212438770004085E /* JavaScriptCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2346A35A212439620004085E /* JSFile */ = {
+			isa = PBXGroup;
+			children = (
+				2346A35B212439620004085E /* test.js */,
+			);
+			path = JSFile;
+			sourceTree = "<group>";
+		};
+		2346A35C212439620004085E /* JSObject */ = {
+			isa = PBXGroup;
+			children = (
+				2346A36121243AC30004085E /* JSObject.h */,
+				2346A36221243AC30004085E /* JSObject.m */,
+			);
+			path = JSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +171,7 @@
 			files = (
 				2346A34E212438490004085E /* LaunchScreen.storyboard in Resources */,
 				2346A34B212438490004085E /* Assets.xcassets in Resources */,
+				2346A35D212439620004085E /* test.js in Resources */,
 				2346A349212438470004085E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2346A346212438470004085E /* ViewController.m in Sources */,
+				2346A36321243AC30004085E /* JSObject.m in Sources */,
 				2346A351212438490004085E /* main.m in Sources */,
+				2346A36021243A720004085E /* JSTool.m in Sources */,
 				2346A343212438470004085E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
