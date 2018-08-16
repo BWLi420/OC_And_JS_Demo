@@ -1,5 +1,5 @@
 # OC_And_JS_Demo
-> JS 和 OC 的简单相互调用，基于存 JS 文件，不使用 webView 
+> JS 和 OC 的简单相互调用，基于纯 JS 文件，不使用 webView 
 
 ```
 + (void)gg {
