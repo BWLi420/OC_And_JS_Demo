@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /** 项目需要导入 JavaScriptCore.framework */
     [JSTool gg];
 }
 
